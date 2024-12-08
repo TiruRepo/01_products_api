@@ -1,15 +1,15 @@
 -- -----------------------------------------------------
 -- Schema fullstack
 -- -----------------------------------------------------
-DROP SCHEMA IF EXISTS `ashokit_ecomm`;
+DROP SCHEMA IF EXISTS `ecomdb`;
 
-CREATE SCHEMA `ashokit_ecomm`;
-USE `ashokit_ecomm` ;
+CREATE SCHEMA `ecomdb`;
+USE `ecomdb` ;
 
 -- -----------------------------------------------------
 -- Table `fullstack`.`product_category`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `ashokit_ecomm`.`product_category` (
+CREATE TABLE IF NOT EXISTS `ecomdb`.`product_category` (
   `id` BIGINT(20) NOT NULL AUTO_INCREMENT,
   `category_name` VARCHAR(255) NULL DEFAULT NULL,
   PRIMARY KEY (`id`))
@@ -19,7 +19,7 @@ AUTO_INCREMENT = 1;
 -- -----------------------------------------------------
 -- Table `fullstack`.`product`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `ashokit_ecomm`.`product` (
+CREATE TABLE IF NOT EXISTS `ecomdb`.`product` (
   `id` BIGINT(20) NOT NULL AUTO_INCREMENT,
   `title` VARCHAR(255) DEFAULT NULL,
   `name` VARCHAR(255) DEFAULT NULL,
